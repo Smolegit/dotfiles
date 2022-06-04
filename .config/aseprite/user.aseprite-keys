@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<keyboard version="1">
+    <commands>
+        <key command="Fill" shortcut="F" removed="true" />
+        <key command="Stroke" shortcut="S" removed="true" />
+        <key command="PasteText" shortcut="T" removed="true" />
+        <key command="PaletteEditor" shortcut="A" removed="true" />
+        <key command="AddColor" shortcut="T" />
+        <key command="ShowDynamics" shortcut="F" />
+    </commands>
+    <tools>
+        <key tool="rectangular_marquee" shortcut="M" removed="true" />
+        <key tool="rectangular_marquee" shortcut="D" />
+        <key tool="magic_wand" shortcut="W" removed="true" />
+        <key tool="pencil" shortcut="B" removed="true" />
+        <key tool="pencil" shortcut="S" />
+        <key tool="eraser" shortcut="E" removed="true" />
+        <key tool="eyedropper" shortcut="I" removed="true" />
+        <key tool="paint_bucket" shortcut="G" removed="true" />
+        <key tool="paint_bucket" shortcut="A" />
+        <key tool="line" shortcut="L" removed="true" />
+        <key tool="line" shortcut="W" />
+        <key tool="contour" shortcut="D" removed="true" />
+        <key tool="blur" shortcut="R" removed="true" />
+    </tools>
+    <quicktools>
+        <key tool="hand" shortcut="Space" removed="true" />
+        <key tool="eraser" shortcut="E" />
+    </quicktools>
+    <actions>
+        <key action="AutoSelectLayer" shortcut="Ctrl" removed="true" />
+    </actions>
+    <wheel />
+</keyboard>
