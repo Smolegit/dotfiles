@@ -19,6 +19,7 @@ alias fetch='neofetch'
 alias :q='exit'
 alias :e='nvim'
 
+alias ninja='~/ninja/ninja'
 #Git
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 
@@ -51,10 +52,10 @@ if ${use_color} ; then
 		fi
 	fi
 
-	if [[ ${EUID} != 0 ]] ; then
+	if [[ ${EUID} == 0 ]] ; then
 		PS1='\n\e[0;36m\e[30m\e[46m \e[36m\e[100m\e[1;37m   \w\e[40m\e[90m \e[0;37m'
 	else
-		PS1='\[\e[1;33m\][\[\e[37m\]\w\[\e[33m\]] \[\e[34m\]>\[\e[32m\]>\[\e[33m\]> \[\e[0;37m\]'
+		PS1='\[\e[0;90m\]┌ \[\e[1;34m\]\w \[\e[0;90m\]\n└ \[\e[1;34m\]>> \[\e[0;38m\]'
 	fi
 
 	alias ls='ls --color=auto'

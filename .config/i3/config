@@ -203,7 +203,7 @@ bindsym $mod+w exec ~/Documents/spotvol.sh +
 bindsym $mod+s exec ~/Documents/spotvol.sh -
 #startup
 exec --no-startup-id nitrogen --restore
-exec picom -b
+exec picom --experimental-backends -b
 exec polybar bar
 exec polybar bar2
 exec xrandr --output DVI-D-0 --primary --mode 1920x1080 --rate 144

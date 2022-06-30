@@ -1,0 +1,127 @@
+* {
+	dark-1: #0b0b0b;
+	dark-2: #101111;
+	dark-3: #181919;
+	light-2: #6c7475;
+	light-1: #dddddd;
+	yellow: #9b8f5c;
+	red: #b66467;
+	cyan: #51a7a2;
+   blue: #6593bb;
+	purple: #9d6ca9;
+	green: #84a06d;
+}
+
+configuration {
+    font: "Victor Mono Nerd Font Medium 11";
+    fixed-num-lines: 				true;
+    show-icons: 						false;
+    sidebar-mode: 					false;
+    scroll-method: 					0;
+    window-format: 					"[{w}] ··· {c} ···   {t}";
+    click-to-exit: 					true;
+    combi-hide-mode-prefix: 		false;
+    display-window: 			   	" ";
+    display-windowcd: 				" ";
+    display-run: 						" ";
+    display-ssh: 						" ";
+    display-drun: 					"Run:";
+    display-combi: 					" ";
+}
+
+window {
+    background-color: @dark-1;
+    border:           0;
+    padding:          8;
+    width: 35%;
+}
+
+mainbox {
+    border:  0;
+    padding: 15;
+	 background-color: @dark-1;
+}
+message {
+    border:       1px dash 0px 0px ;
+    border-color: @separatorcolor;
+    padding:      1px ;
+}
+
+textbox {
+    text-color: @foreground;
+}
+
+scrollbar {
+    width:        0px ;
+    border:       0;
+    handle-width: 0px ;
+    padding:      0;
+}
+
+listview {
+    fixed-height: 0;
+    lines: 10;
+    columns: 2;
+    border:       none;
+	 background-color: @dark-1;
+    border-color: @dark-1;
+    spacing:      3px ;
+    scrollbar:    true;
+    padding:      0px;
+}
+
+
+element {
+    border:  0px;
+    padding: 8px;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element.normal.normal {
+	background-color: @dark-1;
+	text-color: @light-2;
+}
+element.alternate.normal {
+	background-color: @dark-1;
+	text-color: @light-2;
+}
+element.normal.active{
+	background-color: @dark-1;
+	text-color: @light-2;
+}
+element.selected.normal{
+	background-color: @dark-2;
+	text-color: white;
+	border-radius: 3px;
+}
+
+inputbar {
+    spacing:    0;
+    text-color: @dark-1;
+	 background-color: @dark-1;
+    padding:    8px ;
+}
+case-indicator {
+    spacing:    8;
+    text-color: @normal-foreground;
+}
+entry {
+	 padding: 8px;
+    spacing:    0;
+	 border-radius: 0px 4px 4px 0px;
+    background-color: @dark-2;
+	 text-color: @light-1;
+}
+prompt {
+    spacing:    0;
+	 border-radius: 4px 0px 0px 4px;
+	 background-color: @blue;
+	 padding: 8px;
+	 font: "Victor Mono Nerd Font Medium 12";
+    text-color: @dark-1;
+}
+inputbar {
+    children:   [ prompt,   entry   ];
+}
