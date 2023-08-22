@@ -1,4 +1,9 @@
 #!/bin/bash
 killall polybar
-polybar bar
+if [[ $(xrandr | grep " connected" -c) == 2 ]]
+then
+	polybar bar
+else 
+	polybar laptopbar
+fi
 
