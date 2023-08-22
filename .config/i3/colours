@@ -1,0 +1,13 @@
+ set $border	#ffffff 
+ set $border_in #888888
+ set $title_bg  #ffffff
+ set $title_bg_in #8589a6
+ set $title_text #000000
+ set $title_text_in #111111
+
+#class                  title border	title bg	text		indicator	border
+client.focused		$title_bg       $title_bg       $title_text     $border         $border
+client.focused_inactive $title_bg_in	$title_bg_in    $title_text_in  $border_in      $border_in
+client.unfocused        $title_bg_in	$title_bg_in    $title_text_in  $border_in      $border_in
+client.urgent           $title_bg       $title_bg       $title_text     $border         $border
+client.placeholder      $title_bg       $title_bg       $title_text     $border         $border
