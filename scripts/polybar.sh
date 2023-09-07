@@ -4,6 +4,6 @@ if [[ $(xrandr | grep " connected" -c) == 2 ]]
 then
 	polybar bar
 else 
-	polybar laptopbar
+	polybar laptopbar 
 fi
 
