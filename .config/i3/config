@@ -153,7 +153,7 @@ bindsym $mod+backslash exec playerctl --player=spotify play-pause
 #startup
 exec --no-startup-id nitrogen --restore
 exec picom -b
-exec polybar bar
+exec ~/scripts/polybar.sh 
 exec xrandr --output DisplayPort-0 --primary --right-of HDMI-A-0
 exec ~/scripts/tablet.sh
 
